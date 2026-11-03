@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tibo.dog · Wiki</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- 顶部轻盈导航栏 -->
+  <header class="wiki-header">
+    <div class="header-left">
+      <button id="sidebar-toggle" class="icon-btn" aria-label="展开或收起侧边栏">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+        <span class="logo-title">tibo.dog · Wiki</span>
+      </a>
+    </div>
+
+    <!-- 快速搜索框 -->
+    <div class="header-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="quick-search-input" placeholder="搜索武器、被动、建筑、狗狗 (按 / 快捷聚焦)...">
+    </div>
+
+    <div class="header-right">
+      <a href="tater-mines.html" class="btn btn-primary" style="padding: 6px 14px; font-size: 0.85rem;">
+        <i class="fa-solid fa-khanda"></i> 武器示例
+      </a>
+    </div>
+  </header>
+
+  <!-- 页面主体容器 -->
+  <div class="wiki-layout">
+
+    <!-- 侧边栏：由 js/sidebar-data.js 统一驱动，修改该文件即可全站同步更新 -->
+    <aside class="wiki-sidebar" id="wiki-sidebar"></aside>
+
+    <!-- 主展示区 -->
+    <main class="wiki-main">
+
+      <!-- 极简明亮风光 Hero Banner -->
+      <section class="wiki-hero">
+        <div class="hero-content">
+          <h1>tibo.dog 游戏维基</h1>
+          <p>这是一个由 <a href="https://x.com/poteto" target="_blank">@poteto</a> 制作的一款 <a href="https://tibo.dog/"
+              target="_blank">网页游戏</a>。由 <a href="https://x.com/liujiayi1111" target="_blank">刘佳怡</a>
+            制作制作游戏物品维基百科。本网站为非官方网站。</p>
+        </div>
+      </section>
+
+      <!-- 快速分类筛选标签条 -->
+      <div class="category-filter-bar">
+        <button class="filter-chip active" data-category="all"><i class="fa-solid fa-border-all"></i> 全部资料
+          (238)</button>
+        <button class="filter-chip" data-category="weapon"><i class="fa-solid fa-khanda"></i> 武器 (75)</button>
+        <button class="filter-chip" data-category="passive"><i class="fa-solid fa-shield-heart"></i> 被动 (22)</button>
+        <button class="filter-chip" data-category="item"><i class="fa-solid fa-flask-round-potion"></i> 道具 (42)</button>
+        <button class="filter-chip" data-category="poi"><i class="fa-solid fa-landmark-dome"></i> 建筑 (21)</button>
+        <button class="filter-chip" data-category="enemy"><i class="fa-solid fa-ghost"></i> 敌人 (42)</button>
+        <button class="filter-chip" data-category="boss"><i class="fa-solid fa-crown"></i> 首领 (13)</button>
+        <button class="filter-chip" data-category="biome"><i class="fa-solid fa-mountain-sun"></i> 地区 (12)</button>
+        <button class="filter-chip" data-category="dog"><i class="fa-solid fa-dog"></i> 狗狗 (11)</button>
+      </div>
+
+      <!-- 核心分类网格 -->
+      <section class="section-container" id="categories">
+        <h2 class="section-title"><i class="fa-solid fa-shapes"></i> 核心探索模块 (点击直达代表词条)</h2>
+
+        <div class="grid-8-categories">
+
+          <!-- 1. 武器 -->
+          <a href="tater-mines.html" class="cat-card cat-weapon" data-category="weapon">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-khanda"></i></div>
+              <span class="cat-count">75 篇词条</span>
+            </div>
+            <h3>武器大全</h3>
+            <p>土豆地雷、大薯条、黄油带、终极融合炮兵等全部基础与超武图鉴。</p>
+          </a>
+
+          <!-- 2. 被动 -->
+          <a href="fertilizer.html" class="cat-card cat-passive" data-category="passive">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-shield-heart"></i></div>
+              <span class="cat-count">22 篇词条</span>
+            </div>
+            <h3>被动能力</h3>
+            <p>肥料、培根碎、香葱、GPU、烂土豆等数值成长与超武核心催化剂。</p>
+          </a>
+
+          <!-- 3. 道具 -->
+          <a href="all-seeing-spud.html" class="cat-card cat-item" data-category="item">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-box-open"></i></div>
+              <span class="cat-count">42 篇词条</span>
+            </div>
+            <h3>道具收集</h3>
+            <p>全知薯眼、烤土豆盾、暴击薯片、优惠券本、岩浆可乐饼等局内实用装备。</p>
+          </a>
+
+          <!-- 4. 建筑 -->
+          <a href="botDock.html" class="cat-card cat-poi" data-category="poi">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-landmark-dome"></i></div>
+              <span class="cat-count">21 处设施</span>
+            </div>
+            <h3>建筑设施</h3>
+            <p>Bot充电站、首领巢穴、发霉神龛、微波炉、土豆冰柜与菜地设施。</p>
+          </a>
+
+          <!-- 5. 敌人 -->
+          <a href="aphid.html" class="cat-card cat-enemy" data-category="enemy">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-ghost"></i></div>
+              <span class="cat-count">42 种害虫</span>
+            </div>
+            <h3>敌人小怪</h3>
+            <p>蚜虫、土豆甲虫、田鼠、油污恶魔、海鸥群等普通与精英群怪资料。</p>
+          </a>
+
+          <!-- 6. 首领 -->
+          <a href="harvester.html" class="cat-card cat-boss" data-category="boss">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-crown"></i></div>
+              <span class="cat-count">13 位霸主</span>
+            </div>
+            <h3>首领 BOSS</h3>
+            <p>收割机、科罗拉多女王、炸锅之王、晚疫病等关底霸主机制与打法。</p>
+          </a>
+
+          <!-- 7. 地区 -->
+          <a href="potato-field.html" class="cat-card cat-region" data-category="biome">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+              <span class="cat-count">12 大世界</span>
+            </div>
+            <h3>地区世界</h3>
+            <p>土豆田、薯片峡谷、炸油沙漠、番茄酱沼泽等关卡地貌与环境危险。</p>
+          </a>
+
+          <!-- 8. 狗狗 -->
+          <a href="zelda-and-link.html" class="cat-card cat-dog" data-category="dog">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-dog"></i></div>
+              <span class="cat-count">11 只伙伴</span>
+            </div>
+            <h3>萌犬伙伴</h3>
+            <p>塞尔达与林克合体神犬、柯基华夫、比格小探、灵缇等忠诚犬伴技能一览。</p>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 最新收录与速查 -->
+      <section class="section-container">
+        <div class="two-columns">
+
+          <div class="panel">
+            <h3 class="panel-title"><i class="fa-solid fa-clock-rotate-left"></i> 精选热门词条直达</h3>
+            <ul class="wiki-list">
+              <li>
+                <a href="tater-mines.html" class="list-link"><span class="tag tag-weapon">武器</span> 土豆地雷
+                  (埋下土豆，敌人靠近就爆炸)</a>
+                <span class="list-date">查看</span>
+              </li>
+              <li>
+                <a href="harvester.html" class="list-link"><span class="tag tag-boss">首领</span> 收割机 (联合收割机，土豆的最终噩梦)</a>
+                <span class="list-date">查看</span>
+              </li>
+              <li>
+                <a href="corgi.html" class="list-link"><span class="tag tag-dog">狗狗</span> 华夫 · 柯基 (每隔几秒叫一声冻住附近敌人)</a>
+                <span class="list-date">查看</span>
+              </li>
+              <li>
+                <a href="bossLair.html" class="list-link"><span class="tag tag-poi">建筑</span> 首领巢穴 (首领沉睡地，守着一个大宝箱)</a>
+                <span class="list-date">查看</span>
+              </li>
+              <li>
+                <a href="bacon-bits.html" class="list-link"><span class="tag tag-passive">被动</span> 培根碎
+                  (每级对精英和首领伤害+12%)</a>
+                <span class="list-date">查看</span>
+              </li>
+              <li>
+                <a href="baked-buckler.html" class="list-link"><span class="tag tag-item">道具</span> 烤土豆盾
+                  (提供护甲+10的高额防护)</a>
+                <span class="list-date">查看</span>
+              </li>
+              <li>
+                <a href="potato-field.html" class="list-link"><span class="tag tag-region">地区</span> 土豆田
+                  (整齐田垄，每一局游戏的初始起点)</a>
+                <span class="list-date">查看</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3 class="panel-title"><i class="fa-solid fa-feather"></i> 维护说明</h3>
+
+            <ul style="padding-left: 20px; font-size: 0.88rem; color: var(--text-muted); line-height: 1.8;">
+              <li><strong>即时搜索</strong>：按键盘 <code>/</code> 键可快速定位搜索框，输入任何关键字实时筛选；</li>
+              <li><strong>纯静态零依赖</strong>：支持双击直接在任意浏览器中离线打开浏览。</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 底部简要版权 -->
+      <footer class="wiki-footer">
+        <p>
+        <p>© 2026 tibo.dog Wiki 指南</p>
+        </p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="js/sidebar-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

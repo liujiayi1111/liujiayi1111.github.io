@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>豆豆 (猎狐梗犬) - 狗狗 - 游戏百科 Wiki</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="wiki-header">
+    <div class="header-left">
+      <button id="sidebar-toggle" class="icon-btn" aria-label="展开或收起侧边栏">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+        <span class="logo-title">tibo.dog · Wiki</span>
+      </a>
+    </div>
+
+    <div class="header-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="quick-search-input" placeholder="搜索武器、被动、建筑、狗狗 (按 / 快捷聚焦)...">
+    </div>
+
+    <div class="header-right">
+      <a href="index.html" class="icon-btn" title="返回首页">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="wiki-layout">
+    <aside class="wiki-sidebar" id="wiki-sidebar"></aside>
+
+    <main class="wiki-main">
+      <nav class="breadcrumb">
+        <a href="index.html">首页</a>
+        <span class="sep">/</span>
+        <a href="#">狗狗</a>
+        <span class="sep">/</span>
+        <span class="current">豆豆 (猎狐梗犬)</span>
+      </nav>
+
+      <div class="article-header">
+        <h1 class="article-title">豆豆 (猎狐梗犬)</h1>
+        <div class="article-meta">
+          <span class="tag tag-dog"><i class="fa-solid fa-dog"></i> 忠诚萌犬 · 猎狐梗犬</span>
+
+
+        </div>
+      </div>
+
+      <div class="article-body-layout">
+        <article class="article-content" id="article-content">
+          <blockquote class="lead-quote">
+            “冲向最近的敌人咬一口，大约每秒一次。”
+          </blockquote>
+
+          <div class="toc-wrapper" id="toc-container">
+            <div class="toc-title"><i class="fa-solid fa-list-ul"></i> 本页快速目录</div>
+            <ul class="toc-list" id="toc-list"></ul>
+          </div>
+
+
+          <section class="content-section">
+            <h2 id="overview"><i class="fa-solid fa-circle-info"></i> 忠犬技能与守护光环</h2>
+            <p><strong>豆豆 (猎狐梗犬)</strong>：冲向最近的敌人咬一口，大约每秒一次。</p>
+
+
+            <div class="specs-grid">
+              <div class="spec-card">
+                <div class="spec-label"><i class="fa-solid fa-paw"></i> 专属犬种</div>
+                <div class="spec-value" style="font-size: 1rem;">猎狐梗犬</div>
+              </div>
+              <div class="spec-card">
+                <div class="spec-label"><i class="fa-solid fa-gauge-high"></i> 狗狗移速</div>
+                <div class="spec-value">140</div>
+              </div>
+              <div class="spec-card">
+                <div class="spec-label"><i class="fa-solid fa-clock-rotate-left"></i> 技能冷却</div>
+                <div class="spec-value">每 0.9 <span class="spec-sub">秒</span></div>
+              </div>
+              <div class="spec-card">
+                <div class="spec-label"><i class="fa-solid fa-shield-heart"></i> 常驻光环</div>
+                <div class="spec-value" style="font-size: 0.95rem;">基础伤害 (Might) +3%</div>
+              </div>
+            </div>
+
+            <div class="alert alert-info">
+              <i class="fa-solid fa-bell"></i>
+              <div>
+                <strong>主动战斗动作：</strong>每 <code>0.9</code> 秒自动触发一次专属技能。<br>
+                • 技能伤害：<code>22</code> 点
+              </div>
+            </div>
+          </section>
+
+
+          <section class="content-section">
+            <h2 id="progression"><i class="fa-solid fa-arrow-up-right-dots"></i> 亲密度成长与技能进阶</h2>
+            <p>狗狗通过在局内陪伴 Tibo 战斗获取经验，提升亲密度阶数并强化技能数值：</p>
+            <table class="upgrade-table">
+              <thead>
+                <tr>
+                  <th style="width: 20%;">成长阶段</th>
+                  <th style="width: 50%;">技能强化内容</th>
+                  <th style="width: 30%;">光环倍率</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Lv.1</strong></td>
+                  <td>初始基础技能状态</td>
+                  <td>1.0x (基础光环)</td>
+                </tr>
+
+                <tr>
+                  <td><strong>Lv.2</strong></td>
+                  <td>CD 缩短至 <code>80%</code> · 技能威力提升 <code>+50%</code></td>
+                  <td>光环增强 <code>+100%</code></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Lv.3</strong></td>
+                  <td>CD 缩短至 <code>80%</code> · 技能威力提升 <code>+50%</code></td>
+                  <td>光环增强 <code>+100%</code></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Lv.4</strong></td>
+                  <td>CD 缩短至 <code>100%</code> · 技能威力提升 <code>+25%</code></td>
+                  <td>光环增强 <code>+50%</code></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Lv.5</strong></td>
+                  <td>CD 缩短至 <code>100%</code> · 技能威力提升 <code>+25%</code></td>
+                  <td>光环增强 <code>+50%</code></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </section>
+
+
+          <section class="content-section">
+            <h2 id="strategy"><i class="fa-solid fa-chess-knight"></i> 最佳搭配流派</h2>
+            <p>
+              根据 <strong>豆豆 (猎狐梗犬)</strong> 提供的团队光环特性选择主手武器。例如暴击型狗狗搭配高频飞刃流，或者护甲回血型狗狗搭配高耐久肉盾流，能发挥 1+1>2 的协同效应。
+            </p>
+          </section>
+
+        </article>
+
+        <aside class="wiki-infobox">
+          <div class="infobox-header">
+            <h3>豆豆 (猎狐梗犬)</h3>
+            <div class="infobox-subtitle">品种: 猎狐梗犬</div>
+          </div>
+          <div class="infobox-image-wrapper">
+            <img src="image/dog/terrier.png" alt="豆豆 (猎狐梗犬)" class="infobox-art-img"
+              onerror="this.onerror=null;this.src='image/terrier.png';">
+          </div>
+          <table class="infobox-table">
+            <tbody>
+
+              <tr>
+                <th>狗狗名字</th>
+                <td><strong>豆豆 (猎狐梗犬)</strong></td>
+              </tr>
+
+              <tr>
+                <th>资料分类</th>
+                <td><span class="tag tag-dog"><i class="fa-solid fa-dog"></i> 狗狗</span></td>
+              </tr>
+              <tr>
+                <th>犬种品种</th>
+                <td><strong>猎狐梗犬</strong></td>
+              </tr>
+              <tr>
+                <th>奔跑速度</th>
+                <td><strong>140</strong></td>
+              </tr>
+              <tr>
+                <th>体型碰撞</th>
+                <td><strong>5</strong> 半径</td>
+              </tr>
+              <tr>
+                <th>常驻光环</th>
+                <td><strong>基础伤害 (Might) +3%</strong></td>
+              </tr>
+              <tr>
+                <th>主动技能</th>
+                <td><strong>bite</strong></td>
+              </tr>
+              <tr>
+                <th>触发周期</th>
+                <td><strong>每 0.9 秒</strong></td>
+              </tr>
+              <tr>
+                <th>品质稀有度</th>
+                <td><span class="tag tag-dog">忠诚伴侣</span></td>
+              </tr>
+              <tr>
+                <th>毛发原色</th>
+                <td><span class="color-pill"><span class="color-dot" style="background:#f2efe6"></span>#f2efe6</span>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </aside>
+      </div>
+
+      <footer class="wiki-footer">
+        <p>© 2026 tibo.dog Wiki 指南</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/sidebar-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

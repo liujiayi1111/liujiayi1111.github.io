@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>堆肥泰坦 - 首领 - 游戏百科 Wiki</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="wiki-header">
+    <div class="header-left">
+      <button id="sidebar-toggle" class="icon-btn" aria-label="展开或收起侧边栏">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+        <span class="logo-title">tibo.dog · Wiki</span>
+      </a>
+    </div>
+
+    <div class="header-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="quick-search-input" placeholder="搜索武器、被动、建筑、狗狗 (按 / 快捷聚焦)...">
+    </div>
+
+    <div class="header-right">
+      <a href="index.html" class="icon-btn" title="返回首页">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="wiki-layout">
+    <aside class="wiki-sidebar" id="wiki-sidebar"></aside>
+
+    <main class="wiki-main">
+      <nav class="breadcrumb">
+        <a href="index.html">首页</a>
+        <span class="sep">/</span>
+        <a href="#">首领</a>
+        <span class="sep">/</span>
+        <span class="current">堆肥泰坦</span>
+      </nav>
+
+      <div class="article-header">
+        <h1 class="article-title">堆肥泰坦</h1>
+        <div class="article-meta">
+          <span class="tag tag-boss"><i class="fa-solid fa-skull-crossbones"></i> 终极首领</span>
+
+
+        </div>
+      </div>
+
+      <div class="article-body-layout">
+        <article class="article-content" id="article-content">
+          <blockquote class="lead-quote">
+            “一堆腐烂的落叶和覆盖物。蛆虫从里面涌出。”
+          </blockquote>
+
+          <div class="toc-wrapper" id="toc-container">
+            <div class="toc-title"><i class="fa-solid fa-list-ul"></i> 本页快速目录</div>
+            <ul class="toc-list" id="toc-list"></ul>
+          </div>
+
+
+          <section class="content-section">
+            <h2 id="overview"><i class="fa-solid fa-circle-info"></i> 首领基本属性</h2>
+            <p><strong>堆肥泰坦</strong>：一堆腐烂的落叶和覆盖物。蛆虫从里面涌出。</p>
+
+            <div class="boss-hp-widget">
+              <div class="boss-hp-header">
+                <span><i class="fa-solid fa-heart-pulse"></i> 终极 BOSS 生命总值</span>
+                <span class="boss-hp-number">9,000 HP</span>
+              </div>
+              <div class="boss-hp-bar">
+                <div class="boss-hp-fill" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="specs-grid">
+              <div class="spec-card">
+                <div class="spec-label"><i class="fa-solid fa-heart"></i> 最大生命</div>
+                <div class="spec-value">9,000 <span class="spec-sub">HP</span></div>
+              </div>
+              <div class="spec-card">
+                <div class="spec-label"><i class="fa-solid fa-skull"></i> 接触碰撞伤害</div>
+                <div class="spec-value">30 <span class="spec-sub">点</span></div>
+              </div>
+              <div class="spec-card">
+                <div class="spec-label"><i class="fa-solid fa-gauge-high"></i> 移动速度</div>
+                <div class="spec-value">24</div>
+              </div>
+              <div class="spec-card">
+                <div class="spec-label"><i class="fa-solid fa-circle-radiation"></i> 首领体型半径</div>
+                <div class="spec-value">22</div>
+              </div>
+            </div>
+
+
+            <div class="alert alert-danger" style="margin-top: 14px;">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <div>
+                <strong>首领专属近战特技：</strong>召唤幼虫集群 (召唤随从护卫)<br>
+                • 触发周期：每 <code>4</code> 秒一次<br>
+                • 预警危险红圈前摇：<code>1</code> 秒<br>
+
+
+                • 特技判定数量：<code>14</code> 次/目标<br>
+
+              </div>
+            </div>
+
+          </section>
+
+          <section class="content-section">
+            <h2 id="patterns"><i class="fa-solid fa-wand-magic-sparkles"></i> 弹幕阶段招式拆解</h2>
+            <p><strong>堆肥泰坦</strong> 在战斗中按固定周期轮番释放以下弹幕攻击，请密切留意前摇预警红圈并使用冲刺规避：</p>
+            <div class="pattern-grid">
+
+              <div class="pattern-card">
+                <div class="pattern-card-header">
+                  <span class="pattern-title"><i class="fa-solid fa-certificate"></i> 阶段弹幕 1 — 螺旋旋转弹幕</span>
+                  <span class="tag tag-boss">4 发弹幕</span>
+                </div>
+                <p>
+                  <strong>基础伤害：</strong><code>12</code> 点 ·
+                  <strong>弹幕飞行速度：</strong><code>55</code> ·
+                  <strong>弹丸半径：</strong><code>3.5</code><br>
+                  <strong>连发波次：</strong>连续爆发 <code>12</code> 轮 (每轮间隔 <code>0.18s</code>) ·
+                  <strong>施法预警前摇：</strong><code>1s</code>
+
+                </p>
+              </div>
+
+            </div>
+          </section>
+
+
+
+        </article>
+
+        <aside class="wiki-infobox">
+          <div class="infobox-header">
+            <h3>堆肥泰坦</h3>
+            <div class="infobox-subtitle">首领生命: 9,000 HP · 招式冷却: 4s</div>
+          </div>
+          <div class="infobox-image-wrapper">
+            <img src="image/boss/compost-titan.png" alt="堆肥泰坦" class="infobox-art-img"
+              onerror="this.onerror=null;this.src='image/compost-titan.png';">
+          </div>
+          <table class="infobox-table">
+            <tbody>
+
+              <tr>
+                <th>词条名称</th>
+                <td><strong>堆肥泰坦</strong></td>
+              </tr>
+
+              <tr>
+                <th>资料分类</th>
+                <td><span class="tag tag-boss"><i class="fa-solid fa-skull-crossbones"></i> 首领</span></td>
+              </tr>
+              <tr>
+                <th>首领生命</th>
+                <td><strong>9,000</strong> HP</td>
+              </tr>
+              <tr>
+                <th>接触伤害</th>
+                <td><strong>30</strong> 点</td>
+              </tr>
+              <tr>
+                <th>移动速度</th>
+                <td><strong>24</strong></td>
+              </tr>
+              <tr>
+                <th>首领体型</th>
+                <td><strong>22</strong> 半径</td>
+              </tr>
+              <tr>
+                <th>招式冷却</th>
+                <td><strong>每 4 秒</strong></td>
+              </tr>
+              <tr>
+                <th>前摇预警</th>
+                <td><strong>1 秒</strong></td>
+              </tr>
+              <tr>
+                <th>弹幕频率</th>
+                <td><strong>每 3.6 秒</strong></td>
+              </tr>
+              <tr>
+                <th>击败奖励</th>
+                <td><strong>200</strong> XP</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+
+        </aside>
+      </div>
+
+      <footer class="wiki-footer">
+        <p>© 2026 tibo.dog Wiki 指南</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/sidebar-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>土豆磨刀石 - 建筑 - 游戏百科 Wiki</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="wiki-header">
+    <div class="header-left">
+      <button id="sidebar-toggle" class="icon-btn" aria-label="展开或收起侧边栏">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+        <span class="logo-title">tibo.dog · Wiki</span>
+      </a>
+    </div>
+
+    <div class="header-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="quick-search-input" placeholder="搜索武器、被动、建筑、狗狗 (按 / 快捷聚焦)...">
+    </div>
+
+    <div class="header-right">
+      <a href="index.html" class="icon-btn" title="返回首页">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="wiki-layout">
+    <aside class="wiki-sidebar" id="wiki-sidebar"></aside>
+
+    <main class="wiki-main">
+      <nav class="breadcrumb">
+        <a href="index.html">首页</a>
+        <span class="sep">/</span>
+        <a href="#">建筑</a>
+        <span class="sep">/</span>
+        <span class="current">土豆磨刀石</span>
+      </nav>
+
+      <div class="article-header">
+        <h1 class="article-title">土豆磨刀石</h1>
+        <div class="article-meta">
+          <span class="tag tag-poi"><i class="fa-solid fa-landmark-dome"></i> 荒野设施</span>
+
+
+        </div>
+      </div>
+
+      <div class="article-body-layout">
+        <article class="article-content" id="article-content">
+          <blockquote class="lead-quote">
+            “站在旁边充能，然后升级一把武器。”
+          </blockquote>
+
+          <div class="toc-wrapper" id="toc-container">
+            <div class="toc-title"><i class="fa-solid fa-list-ul"></i> 本页快速目录</div>
+            <ul class="toc-list" id="toc-list"></ul>
+          </div>
+
+
+          <section class="content-section">
+            <h2 id="overview"><i class="fa-solid fa-circle-info"></i> 设施功能与交互机制</h2>
+            <p><strong>土豆磨刀石</strong>：站在旁边充能，然后升级一把武器。</p>
+
+            <div class="specs-grid">
+              <div class="spec-card">
+                <div class="spec-label"><i class="fa-solid fa-circle-radiation"></i> 交互触发半径</div>
+                <div class="spec-value">20 <span class="spec-sub">像素</span></div>
+              </div>
+              <div class="spec-card">
+                <div class="spec-label"><i class="fa-solid fa-map-pin"></i> 雷达小地图标识</div>
+                <div class="spec-value" style="font-size: 1rem;">blade</div>
+              </div>
+            </div>
+
+
+          </section>
+
+          <section class="content-section">
+            <h2 id="tactics"><i class="fa-solid fa-compass"></i> 地图探索与交互策略</h2>
+            <p>
+              在局内行进时，观察小地图中的高亮地标。靠近 <strong>土豆磨刀石</strong> 交互半径（20 像素）即可触发相应事件，请根据当前血量与金币储备权衡是否前往。
+            </p>
+          </section>
+
+        </article>
+
+        <aside class="wiki-infobox">
+          <div class="infobox-header">
+            <h3>土豆磨刀石</h3>
+            <div class="infobox-subtitle">设施类型: 土豆磨刀石</div>
+          </div>
+          <div class="infobox-image-wrapper">
+            <div class="placeholder-art" style="border-color:#8c9eff55;">
+              <i class="fa-solid fa-landmark-dome" style="color:#8c9eff;"></i>
+              <span>土豆磨刀石 图鉴</span>
+            </div>
+          </div>
+          <table class="infobox-table">
+            <tbody>
+
+              <tr>
+                <th>建筑名称</th>
+                <td><strong>土豆磨刀石</strong></td>
+              </tr>
+              <tr>
+                <th>内部标识</th>
+                <td><code>whetstone</code></td>
+              </tr>
+              <tr>
+                <th>资料分类</th>
+                <td><span class="tag tag-poi"><i class="fa-solid fa-landmark-dome"></i> 建筑</span></td>
+              </tr>
+              <tr>
+                <th>交互半径</th>
+                <td><strong>20 像素</strong></td>
+              </tr>
+              <tr>
+                <th>地图图标</th>
+                <td><code>blade</code></td>
+              </tr>
+              <tr>
+                <th>专属颜色</th>
+                <td><span class="color-pill"><span class="color-dot" style="background:#8c9eff"></span>#8c9eff</span>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </aside>
+      </div>
+
+      <footer class="wiki-footer">
+        <p>© 2026 tibo.dog Wiki 指南</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/sidebar-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

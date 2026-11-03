@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>土豆地雷 - 武器大全 - 游戏百科 Wiki</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- 顶部轻盈导航栏 -->
+  <header class="wiki-header">
+    <div class="header-left">
+      <button id="sidebar-toggle" class="icon-btn" aria-label="展开或收起侧边栏">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+        <span class="logo-title">tibo.dog · Wiki</span>
+      </a>
+    </div>
+
+    <!-- 快速搜索框 -->
+    <div class="header-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="quick-search-input" placeholder="搜索武器、被动、建筑、狗狗 (按 / 快捷聚焦)...">
+    </div>
+
+    <div class="header-right">
+      <a href="index.html" class="icon-btn" title="返回首页">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="wiki-layout">
+    <!-- 侧边栏：由 js/sidebar-data.js 统一驱动，修改该文件即可全站同步更新 -->
+    <aside class="wiki-sidebar" id="wiki-sidebar"></aside>
+
+    <main class="wiki-main">
+      <nav class="breadcrumb">
+        <a href="index.html">首页</a>
+        <span class="sep">/</span>
+        <a href="#">武器大全</a>
+        <span class="sep">/</span>
+        <span class="current">土豆地雷</span>
+      </nav>
+
+      <div class="article-header">
+        <h1 class="article-title">土豆地雷</h1>
+        <div class="article-meta">
+          <span class="tag tag-weapon"><i class="fa-solid fa-khanda"></i> 进攻武器</span>
+          <span class="meta-date">内部代号：tater-mines</span>
+        </div>
+      </div>
+
+      <div class="article-body-layout">
+        <article class="article-content" id="article-content">
+          <blockquote class="lead-quote">
+            “埋下土豆，敌人靠近就爆炸。”
+          </blockquote>
+
+          <div class="toc-wrapper" id="toc-container">
+            <div class="toc-title"><i class="fa-solid fa-list-ul"></i> 本页快速目录</div>
+            <ul class="toc-list" id="toc-list"></ul>
+          </div>
+
+
+          <section class="content-section">
+            <h2 id="desc"><i class="fa-solid fa-circle-info"></i> 效果与机制详述</h2>
+            <p><strong>土豆地雷</strong>：埋下土豆，敌人靠近就爆炸。</p>
+            <div class="alert alert-info">
+              <i class="fa-solid fa-lightbulb"></i>
+              <div>
+                <strong>实战表现：</strong>在冒险过程中合理运用 <code>土豆地雷</code>，可有效应对复杂的土豆原野环境与潮水般的害虫攻势。
+              </div>
+            </div>
+          </section>
+
+
+
+        </article>
+
+        <aside class="wiki-infobox">
+          <div class="infobox-header">
+            <h3>土豆地雷</h3>
+            <div class="infobox-subtitle">ID: tater-mines</div>
+          </div>
+          <div class="infobox-image-wrapper">
+            <div class="placeholder-art">
+              <i class="fa-solid fa-khanda"></i>
+              <span>土豆地雷 图鉴预留</span>
+            </div>
+          </div>
+          <table class="infobox-table">
+            <tbody>
+
+              <tr>
+                <th>词条名称</th>
+                <td><strong>土豆地雷</strong></td>
+              </tr>
+              <tr>
+                <th>内部代码</th>
+                <td><code>tater-mines</code></td>
+              </tr>
+              <tr>
+                <th>资料分类</th>
+                <td><span class="tag tag-weapon"><i class="fa-solid fa-khanda"></i> 武器大全</span></td>
+              </tr>
+              <tr>
+                <th>效果简述</th>
+                <td>埋下土豆，敌人靠近就爆炸。</td>
+              </tr>
+              <tr>
+                <th>版本收录</th>
+                <td>正式版本 v1.0+</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </aside>
+      </div>
+
+      <footer class="wiki-footer">
+        <p>
+        <p>© 2026 tibo.dog Wiki 指南</p>
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/sidebar-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
